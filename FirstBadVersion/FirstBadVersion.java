@@ -11,7 +11,7 @@ public class FirstBadVersion {
             if (!ArrayAPI.isBadVersion(middleIndex) && ArrayAPI.isBadVersion(middleIndex - 1))
                 return middleIndex;
             else if (!ArrayAPI.isBadVersion(middleIndex))
-                right = middleIndex - 1;
+                right = middleIndex;
             else
                 left = middleIndex + 1;
         }
